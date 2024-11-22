@@ -1,4 +1,4 @@
-    require('dotenv').config()
+
     import express from 'express'
 
     const app = express()
@@ -23,7 +23,7 @@
             return res.status(404).send('Coffee not found')
         }
 
-        res.send(200).send(coffee)
+        res.status(200).send(coffee)
     })
 
     //update coffee
